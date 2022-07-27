@@ -23,7 +23,7 @@ const sales = [
     image: Proscuitto ,
   },
   {
-    tittle: "DIABL",
+    tittle: "DIABLO",
     text: "Lorem ipsum dolor consectetur adipisicing elit. Cumque, ratione.",
     price: "$3.50",
     image:  BBQ ,
