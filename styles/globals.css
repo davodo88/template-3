@@ -1,26 +1,32 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes textMenu {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
+#pizzas {
+background-image: url("../images/blackTable.jpg");
+    background-size:cover ;
+    background-repeat: no-repeat;
+    background-position: center;
 
-* {
-  box-sizing: border-box;
-}
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+}
+#information {
+    background-image: url("../images/fondoPizzas.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+
 }
