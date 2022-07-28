@@ -14,55 +14,34 @@ import Image from 'next/image';
       {
         title: "Pizza BBQ",
         text: "pizza casera al horno de piedra",
-        modelo: 
-          <Image
-            src={"/images/pizzas/bbq.jpg"}
-            width={400}
-            height={400}
-            alt="pizza"
-          />
-        ,
+        src: BBQ,
       },
       {
         title: "Pizza PROSCUITO",
-        text: "pizza casera al horno de piedra",
-        modelo: 
-          <Image
-            src={"../images/pizzas/bbq.jpg"}
-            width={400}
-            height={400}
-            alt="pizza"
-          />
-        ,
+        text: "pizza casera al horno de piedra 2",
+        src: BBQ,
       },
       {
         title: "Pizza BUFFALA",
-        text: "pizza casera al horno de piedra",
-        modelo: 
-          <Image
-            src={"/images/pizzas/bbq.jpg"}
-            width={400}
-            height={400}
-            alt="pizza"
-          />
-        ,
+        text: "pizza casera al horno de piedra 3",
+        src: BBQ,
       },
     ];
  const Pizza = () => {
+  const [counter, setCounter] = useState(0)
+  console.log(muestras[-1])
+
     return (
       <div id="pizzas" className="flex flex-row py-24 w-screen h-auto ">
         <button
-         
+         onClick={()=>counter > 0 ? setCounter(counter - 1) : null }
           className={classNames(
             "w-12 h-12 m-auto bg-gray-100 rounded-full"
           )}
         >
           <FontAwesomeIcon icon={faArrowLeft} />
         </button>
-        {muestras.map((muestra, index) => {
-          return (
             <div
-              key={index}
               className={classNames("flex flex-col my-24 border-2 mx-auto w-72 h-72 rounded-md pt-3")}
             >
               <span
@@ -70,17 +49,16 @@ import Image from 'next/image';
                   "flex flex-col text-center text-xl mt-2 font-medium text-white"
                 )}
               >
-                <span>{muestra.title.split(" ")[0]}</span>
-                <span>{muestra.title.split(" ")[1]}</span>
+             
               </span>
               <span className="flex justify-center hover:underline decoration-white text-white my-4">
-                {muestra.text}
+                {muestras[counter].text}
               </span>
+              
             </div>
-          );
-        })}
+        
         <button
-          
+          onClick={()=>counter < muestras.length ? setCounter(counter + 1) :  }
           className="w-12 h-12 m-auto bg-gray-100 rounded-full"
         >
           <FontAwesomeIcon icon={faArrowRight} />
