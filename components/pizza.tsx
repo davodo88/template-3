@@ -19,17 +19,18 @@ import Image from 'next/image';
       {
         title: "Pizza PROSCUITO",
         text: "pizza casera al horno de piedra 2",
-        src: BBQ,
+        src: Buffala,
       },
       {
         title: "Pizza BUFFALA",
         text: "pizza casera al horno de piedra 3",
-        src: BBQ,
+        src: Proscuitto,
       },
     ];
  const Pizza = () => {
   const [counter, setCounter] = useState(0)
-  console.log(muestras[-1])
+  var samples = muestras.length
+  
 
     return (
       <div id="pizzas" className="flex flex-row py-24 w-screen h-auto ">
@@ -58,7 +59,7 @@ import Image from 'next/image';
             </div>
         
         <button
-          onClick={()=>counter < muestras.length ? setCounter(counter + 1) :  }
+          onClick={()=>counter < samples - 1 ? setCounter(counter + 1) : null }
           className="w-12 h-12 m-auto bg-gray-100 rounded-full"
         >
           <FontAwesomeIcon icon={faArrowRight} />
