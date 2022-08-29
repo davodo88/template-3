@@ -2,20 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-@keyframes textMenu {
-    0% {
-        opacity: 0;
-        transform: translateX(-50px);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
 
 #pizzas {
-background-image: url("../images/blackTable.jpg");
+background-image: url("../images/backgrounds/blackTable.jpg");
     background-size:cover ;
     background-repeat: no-repeat;
     background-position: center;
@@ -23,10 +12,15 @@ background-image: url("../images/blackTable.jpg");
 
 }
 #information {
-    background-image: url("../images/fondoPizzas.jpg");
+    background-image: url("../images/backgrounds/fondoPizzas.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+}
 
-
+#legend {
+    background-image: url("../images/backgrounds/pizzaLegend.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }

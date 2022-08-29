@@ -33,7 +33,7 @@ import Image from 'next/image';
   
 
     return (
-      <div id="pizzas" className="flex flex-row py-20 w-screen h-auto ">
+      <div id="pizzas" className="flex flex-row py-8 w-screen h-auto ">
         <button
           onClick={() => (counter > 0 ? setCounter(counter - 1) : null)}
           className={classNames("w-12 h-12 m-auto bg-gray-100 rounded-full")}
@@ -42,18 +42,18 @@ import Image from 'next/image';
         </button>
         <div
           className={classNames(
-            "flex flex-col my-44 mx-auto  rounded-md p-10"
+            "flex flex-col my-44 mx-auto rounded-md p-10 "
           )}>
           <span
             className={classNames(
-              "flex flex-col text-center text-2xl my-2 p-4 font-bold font-Pro text-white"
+              "flex flex-col text-center text-4xl my-2 p-4 font-bold font-Pro text-white "
             )}>
             {muestras[counter].title}
           </span>
-          <span className="flex justify-center font-Pro text-white my-4">
+          <span className="flex justify-center text-xl font-Pro text-white my-6">
             {muestras[counter].text}
           </span>
-          <div className="w-44 h-44 m-auto">
+          <div className="w-64 h-64 m-auto">
             <Image
               src={muestras[counter].src}
               width={400}

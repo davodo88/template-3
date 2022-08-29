@@ -30,6 +30,7 @@ const sales = [
     price: 350,
     image:  BBQ ,
   },
+  
 ];
 
 const hotSales = () => {
@@ -38,14 +39,23 @@ const hotSales = () => {
         <h1 className="text-white mb-24 font-bold text-3xl">
             HOT SALES
         </h1>
-        <div className='flex flex-row justify-evenly '>
+        <div className='flex flex-row-2 justify-evenly '>
         {sales.map((sale, index) => {
             return (
-              <div key={index} className={"text-white w-44 gap-y-6 flex flex-col"}>
-                <Image src={sale.image} alt={sale.tittle} className="rounded-full"/>
+              <div
+                key={index}
+                className={"text-white  w-44 gap-y-6 flex flex-col"}
+              >
+                <Image
+                  src={sale.image}
+                  alt={sale.tittle}
+                  className="rounded-full "
+                />
                 <h1 className="font-extrabold text-xl">{sale.tittle}</h1>
                 <h4 className=" text-white/75 font-thin">{sale.text}</h4>
-                <h2 className="text-yellow font-extrabold">{sale.price/100}€</h2>
+                <h2 className="text-yellow font-extrabold">
+                  {sale.price / 100}€
+                </h2>
               </div>
             );
         })}

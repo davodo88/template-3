@@ -18,12 +18,12 @@ function Info() {
     <div id='information' className='flex flex-row justify-evenly p-10'>
         {models.map ((model, index) => {
             return(
-                <div key={index} className="text-white my-44 gap-y-4 p-10 flex flex-col bg-black/25">
-                    <FontAwesomeIcon icon={model.icon} className="flex mx-auto w-16 h-16 text-white p-2 rounded-xl" />
-                    <div className="flex justify-center text-white font-Pro font-bold text-2xl">
+                <div key={index} className="my-44 gap-y-4 p-10 flex flex-col bg-white/25">
+                    <FontAwesomeIcon icon={model.icon} className="flex mx-auto w-16 h-16 text-black p-2 rounded-xl" />
+                    <div className="flex justify-center text-black font-Pro font-bold text-2xl">
                         {model.h1}
                     </div>
-                    <div className="flex w-52 font-Pro text-center mx-auto text-white text-base">
+                    <div className="flex w-52 font-Pro font-semibold text-center mx-auto text-black text-base">
                         {model.text}
                     </div>
                 </div>
