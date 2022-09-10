@@ -7,9 +7,16 @@ import HotSales from '../components/hotSales'
 import WeAre from '../components/weAre'
 import Footer from '../components/footer'
 import BtnTop from '../components/atom/btnTop'
+import Allmenu from '../components/allmenu'
 
 
-
+    /*
+      
+      
+      
+      
+      
+      */      
 
 const Home: NextPage = () => {
   return (
@@ -17,6 +24,7 @@ const Home: NextPage = () => {
       <Phone />
       <Navbar />
       <Pizza />
+      <Allmenu />
       <Info />
       <HotSales />
       <WeAre />

@@ -15,8 +15,8 @@ const alert = () => {
 function footer() {
   return (
     <div className='flex-col divide-y divide-gray-500 text-white h-max'>
-        <div className='flex-col justify-center p-16'>
-            <div className="flex font-Pro text-4xl my-10 justify-center">
+        <div className='flex-col justify-center p-4 md:p-16'>
+            <div className="flex text-center font-Pro text-4xl my-10 justify-center">
                 SUBSCRIBE FOR OUR NEWSLETTER
             </div>
             <div className="flex justify-center my-10">
@@ -27,13 +27,13 @@ function footer() {
         </div>
         <div className='py-12'>
             <div className="w-32 h-32 mx-auto">
-                <Image src={Logo} width={400} height={400} alt="logo" />
+                <Image src={Logo} width={400} height={400} alt="logo" className=''/>
             </div>
             <div className="flex justify-center font-Pro mt-6"><span className='font-bold'>+0 123 45 67</span><span className='ml-4'>8:00 am - 11:30 pm</span> </div>
             <div className='hidden lg:flex'>
                 <Navbar />
             </div>
-            <div className="flex justify-center font-Pro">
+            <div className="flex flex-col text-center md:flex-row justify-center font-Pro">
                 <span>Copyright<FontAwesomeIcon icon={faCopyright} />2022</span>
                 <span className='ml-4'>DELICIOUS RESTO. All Right Reserved.</span></div>
         </div>

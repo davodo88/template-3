@@ -35,7 +35,7 @@ function Navbar() {
   };
 
   return (
-    <nav className="relative flex  justify-between w-full text-white ">
+    <nav className="relative flex  justify-between w-full py-4 text-white ">
       <div id="medium" className=" hidden md:flex  ">
         <ul className="flex my-2 w-screen text-base lg:text-xl justify-center ">
           {options.map((Option, index) => {
@@ -52,15 +52,15 @@ function Navbar() {
       </div>
       {menu && (
         <div id="movil"
-          className="flex absolute top-8  justify-center
-          text-white rounded text-xl z-40 w-full p-5 h-64 "
+          className="flex absolute top-7 justify-center
+          text-white rounded text-xl z-40 w-full p-5 h-max "
         >
-          <ul className="">
+          <ul className="backdrop-blur-sm bg-gray-200/30 ">
             {responsiveMenu.map((etiqueta, index) => {
               return (
                 <li
                   key={index}
-                  className="trabsition-all hover:translate-x-2 duration-200 p-2 font-Pro font-semibold hover:text-yellow"
+                  className="mx-5  trabsition-all hover:translate-x-3 duration-200 p-2 font-Pro font-semibold hover:text-yellow"
                 >
                   <a href={etiqueta.target}>{etiqueta.name}</a>
                 </li>
@@ -73,12 +73,11 @@ function Navbar() {
       <button
         id="busqueda"
         onClick={handleNavbar}
-        className={classNames("text-white flex md:hidden")}
+        className={classNames("focus:rotate-90 text-white flex md:hidden ml-6")}
       >
-        <FontAwesomeIcon icon={faBars} className="text-white " />
-        {icon && (
-          <FontAwesomeIcon icon={faBars} className="rotate-90 text-white" />
-        )}
+        <div>
+          <FontAwesomeIcon icon={faBars}  className={classNames("text-white ",)} />
+        </div>
       </button>
     </nav>
   );

@@ -11,13 +11,15 @@ class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-          <link href="/static/favicon.ico" rel="shortcut icon" />
+          <title>template 3</title>
+          <link href="../public/favicon.ico" rel="shortcut icon" />
           <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap" rel="stylesheet"></link>
           <meta
             name="description"
             content="template3"
           />
         </Head>
+        {/*<header>Delicius Resto</header>*/}
         <body>
           <Main />
           <NextScript />

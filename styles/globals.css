@@ -8,8 +8,6 @@ background-image: url("../images/backgrounds/blackTable.jpg");
     background-size:cover ;
     background-repeat: no-repeat;
     background-position: center;
-
-
 }
 #information {
     background-image: url("../images/backgrounds/fondoPizzas.jpg");
@@ -21,6 +19,13 @@ background-image: url("../images/backgrounds/blackTable.jpg");
 #legend {
     background-image: url("../images/backgrounds/pizzaLegend.jpg");
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#menus {
+    background-image: url("../images/restaurantLogo.png");
+    background-size: contain;
+    background-size: 400px 400px;
     background-repeat: no-repeat;
     background-position: center;
 }

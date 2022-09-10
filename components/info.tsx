@@ -15,10 +15,10 @@ const models = [
 
 function Info() {
   return (
-    <div id='information' className='flex flex-row justify-evenly p-10'>
+    <div id='information' className='flex flex-col md:flex-row justify-evenly p-10'>
         {models.map ((model, index) => {
             return(
-                <div key={index} className="my-44 gap-y-4 p-10 flex flex-col bg-white/25">
+                <div key={index} className="md:my-44 gap-y-4 p-4 md:p-10 flex flex-col bg-white/25">
                     <FontAwesomeIcon icon={model.icon} className="flex mx-auto w-16 h-16 text-black p-2 rounded-xl" />
                     <div className="flex justify-center text-black font-Pro font-bold text-2xl">
                         {model.h1}
